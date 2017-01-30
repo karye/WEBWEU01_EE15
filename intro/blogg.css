@@ -18,18 +18,14 @@ body {
     width: 700px;
     background-color: #5d2b2b;
     /* Trick 1: centrera box med margin left/right = auto */
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 30px;
+    margin: 30px auto 30px auto;
     padding: 30px;
-    margin-bottom: 30px;
     border-radius: 20px;
     box-shadow: 5px 5px 10px #000;
 }
 h1 {
-    font-family: 'Kumar One', cursive;
+    font: 60px 'Kumar One', cursive;
     color: #FFF;
-    font-size: 60px;
     text-align: center;
 }
 
@@ -37,27 +33,19 @@ h1 {
 .inlagg {
     width: 600px;
     background-color: #952f2f;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto 30px auto;
     padding: 30px;
-    margin-bottom: 30px;
     border-radius: 10px;
     box-shadow: 0 0 10px #000;
 }
 img {
     width: 400px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto 30px auto;
     /* Trick 2: omvandla bild till block-element för att kunna använda trick 1 */
     display: block;
-    margin-bottom: 20px;
     border-radius: 10px;
 }
-h2 {
-    font-family: 'Hind', sans-serif;
-    color: #FFF;
-}
-h3 {
+h2, h3 {
     font-family: 'Hind', sans-serif;
     color: #FFF;
 }
