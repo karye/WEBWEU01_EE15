@@ -9,3 +9,69 @@ body, h1, h2, h3, h4, h5, h6, p, ul {
     margin: 0;
     padding: 0;
 }
+
+/* Layoutens utseende */
+body {
+
+}
+.kontainer {
+    width: 700px;
+    background-color: #90d4be;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 5px 5px 20px #000;
+}
+h1 {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 60px;
+    color: #FFF;
+    text-align: center;
+    text-shadow: 0 1px 1px #000;
+}
+.intro {
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #FFF;
+    margin-left: 100px;
+    margin-right: 100px;
+    text-shadow: 0 1px 1px #000;
+}
+
+/* Rosrutornas utseende */
+.ros {
+    width: 600px;
+    background-color: cadetblue;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.53);
+}
+.ros img {
+    width: 300px;
+    padding: 20px;
+    background-color: #FFF;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.53);
+    float: left;
+    margin-right: 10px;
+}
+.ros p {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #FFF;
+}
+.ros hr {
+    clear: both;
+    visibility: hidden;
+}
+
+/* Referens till Wikipedia */
+.wikipedia {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+
