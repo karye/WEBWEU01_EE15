@@ -12,16 +12,49 @@
         var ctx = c.getContext("2d");
 
         // Måla en gubbe
+        function gubbe(x, y) {
 
-        // Måla huvudet
-        ctx.beginPath();
-        ctx.arc(500, 300, 100, 0, 2 * Math.PI);
-        ctx.lineWidth = 5;
-        ctx.strokeStyle = "#3e88ff";
-        ctx.fillStyle = "#fdb52b";
-        ctx.stroke();
-        ctx.fill();
+            // Måla huvudet
+            ctx.beginPath(x, y);
+            ctx.arc(x, y, 20, 0, 2 * Math.PI);
+            ctx.lineWidth = 5;
+            ctx.strokeStyle = "#3e88ff";
+            ctx.fillStyle = "#fdb52b";
+            ctx.stroke();
+            ctx.fill();
 
+            // Måla kroppen
+            ctx.fillStyle = "red";
+            ctx.fillRect(x - 10, y + 18, 20, 80);
+
+            // Måla högra armen
+            ctx.beginPath();
+            ctx.moveTo(x + 10, y + 18);
+            ctx.lineTo(x + 20, y + 48);
+            ctx.stroke();
+
+            // Måla vänstra armen
+            ctx.beginPath();
+            ctx.moveTo(x - 10, y + 18);
+            ctx.lineTo(x - 20, y + 48);
+            ctx.stroke();
+
+            // Måla högra benet
+            ctx.beginPath();
+            ctx.moveTo(x + 10, y + 98);
+            ctx.lineTo(x + 20, y + 138);
+            ctx.stroke();
+
+            // Måla vänstra benet
+            ctx.beginPath();
+            ctx.moveTo(x - 10, y + 98);
+            ctx.lineTo(x - 20, y + 138);
+            ctx.stroke();
+        }
+
+        for (x = 100; x < 500; x++) {
+            gubbe(x, 100);
+        }
 
     </script>
 </body>
