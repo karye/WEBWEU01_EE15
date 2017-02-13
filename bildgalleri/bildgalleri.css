@@ -10,24 +10,27 @@ body, h1, h2, h3, h4, h5, h6, p, ul {
     padding: 0;
 }
 
-/* Layoutens utseende */
-body {
-
+/* Clearfix hack fixar floaten! */
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
 }
+
+/* Layoutens utseende */
 .kontainer {
     width: 700px;
     background-color: #90d4be;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin: 30px auto;
     border-radius: 10px;
     padding: 20px;
     box-shadow: 5px 5px 20px #000;
 }
 h1 {
-    font-family: 'Roboto Condensed', sans-serif;
-    font-size: 60px;
+    font: 60px 'Roboto Condensed', sans-serif;
     color: #FFF;
     text-align: center;
     text-shadow: 0 1px 1px #000;
@@ -35,8 +38,7 @@ h1 {
 .intro {
     font-family: 'Roboto Condensed', sans-serif;
     color: #FFF;
-    margin-left: 100px;
-    margin-right: 100px;
+    margin: 0 100px;
     text-shadow: 0 1px 1px #000;
 }
 
@@ -44,12 +46,9 @@ h1 {
 .ros {
     width: 600px;
     background-color: cadetblue;
-    margin-left: auto;
-    margin-right: auto;
     border-radius: 10px;
     padding: 20px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin: 20px auto;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.53);
 }
 .ros img {
@@ -64,10 +63,11 @@ h1 {
     font-family: 'Source Sans Pro', sans-serif;
     color: #FFF;
 }
-.ros hr {
+/* .ros hr {
     clear: both;
     visibility: hidden;
 }
+*/
 
 /* Referens till Wikipedia */
 .wikipedia {
