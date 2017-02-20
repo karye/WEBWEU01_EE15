@@ -9,3 +9,67 @@ body, h1, h2, h3, h4, h5, h6, p, ul {
     margin: 0;
     padding: 0;
 }
+
+/* Stänger av float och löser collapsing boxes syndrom */
+.clearfix:after {
+    content: ".";
+    visibility: hidden;
+    display: block;
+    height: 0;
+    clear: both;
+}
+
+/* Layoutens utseende */
+body {
+
+}
+.kontainer {
+    font-family: monospace;
+    width: 1000px;
+    background: url("bilder/section-grain.png");
+    padding: 20px;
+}
+h1 {
+    text-align: center;
+}
+.intro {
+    text-align: center;
+}
+h2 {
+
+}
+
+/* Grönsakslådornas utseende */
+.lada {
+    width: 450px;
+    background: #FFF;
+    float: left;
+    margin-right: 30px;
+    padding: 15px;
+}
+h3 {
+
+}
+img {
+    float: left;
+    margin-right: 15px;
+}
+.pris {
+
+}
+.beskrivning {
+
+}
+.lasmer {
+
+}
+.lasmer a {
+
+}
+button {
+    color: #FFF;
+    background: olive;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+}

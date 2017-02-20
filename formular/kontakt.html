@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <title>Kontaktformulär</title>
+    <link rel="stylesheet" href="kontakt.css">
+</head>
+<body>
+    <form>
+        <h1>Kontaktformulär</h1>
+        <fieldset>
+            <legend>Personuppgifter</legend>
+            <label for="fnamn">Förnamn</label>
+            <input id="fnamn" type="text" placeholder="Anders" required><br>
+
+            <label for="enamn">Efternamn</label>
+            <input id="enamn" type="text" placeholder="Karlsson" required><br>
+
+            <label for="gadress">Gatuadress</label>
+            <input id="gadress" type="text" placeholder="Vattugatan 8" required><br>
+
+            <label for="postnr">Postnr</label>
+            <input id="postnr" type="text" placeholder="12345" required><br>
+
+            <label for="padress">Postadress</label>
+            <input id="padress" type="text" placeholder="Nynäshamn" required><br>
+
+            <label for="mobil">Mobil</label>
+            <input id="mobil" type="tel" placeholder="070768768" required pattern="07[0-9]{8}"><br>
+
+            <label for="epost">Epost</label>
+            <input id="epost" type="email" placeholder="anders@gmail.com" required>
+        </fieldset>
+
+        <fieldset>
+            <legend>Frivilliga uppgifter</legend>
+
+            <h4>Kön</h4>
+            <label>Man</label>
+            <input type="radio" name="kon">
+            <label>Kvinna</label>
+            <input type="radio" name="kon">
+            <label>Vill inte säga</label>
+            <input type="radio" name="kon">
+
+            <h4>Allergi</h4>
+            <label>Gluten</label>
+            <input type="checkbox" name="allergi">
+            <label>Laktos</label>
+            <input type="checkbox" name="allergi">
+            <label>Nötter</label>
+            <input type="checkbox" name="allergi">
+
+            <h4>Åldersgrupp</h4>
+            <select>
+                <option>0 - 10 år</option>
+                <option selected>11 - 20 år</option>
+                <option>21 - 30 år</option>
+                <option>30+ år</option>
+            </select>
+        </fieldset>
+
+        <fieldset>
+            <legend>Övrig info</legend>
+            <label>Kommentar</label>
+            <textarea placeholder="Skriv din kommentar här ..."></textarea>
+        </fieldset>
+
+        <button>Skicka</button>
+    </form>
+</body>
+</html>
