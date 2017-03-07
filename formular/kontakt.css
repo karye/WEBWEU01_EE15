@@ -16,20 +16,18 @@ body {
 }
 form {
     font-family: sans-serif;
-    margin: 20px;
+    margin: 20px auto;
+    width: 500px;
 }
 h1 {
-
-}
-h4 {
-
+    color: #7b5b0d;
 }
 fieldset {
     background: #eddba9;
     border: 10px solid #efca2e;
     border-radius: 20px;
-    width: 600px;
-    padding: 20px;
+    padding: 15px;
+    margin: 5px 0;
 }
 legend {
     font-size: 20px;
@@ -48,8 +46,23 @@ input[type="text"], input[type="tel"], input[type="email"] {
     width: 300px;
     color: #5f490d;
 }
+/* Visa tydligt att vi står in en inmatningsruta */
+input[type="text"]:focus, input[type="tel"]:focus, input[type="email"]:focus {
+    box-shadow: 0 0 10px blue;
+}
+/* Färgar rutan om inmatning är korrekt */
+input[type="text"]:valid, input[type="tel"]:valid, input[type="email"]:valid {
+    background: #fff url(bilder/check.svg) no-repeat;
+    background-size: 25px;
+    background-position: right;
+}
+/* Färgar rutan om inmatning är felaktig */
+input[type="text"]:invalid, input[type="tel"]:invalid, input[type="email"]:invalid {
+    box-shadow: 0 0 10px red;
+}
 .frivilliga label {
     width: auto;
+    margin: 0;
 }
 /* Döljer default-utseendet */
 input[type=checkbox]:not(old),
@@ -80,12 +93,14 @@ select {
     border-radius: 3px;
     border: none;
     width: 100px;
+    background: #FFF;
 }
 option {
 
 }
 textarea {
-    width: 200px;
+    padding: 5px;
+    width: 300px;
     max-width: 400px;
     height: 200px;
     vertical-align: top;
@@ -95,10 +110,10 @@ textarea {
 button {
     cursor: pointer;
     margin: 10px 0;
-    padding: 10px 30px;
+    padding: 10px 50px;
     border-radius: 25px;
     border: none;
-    color: #FFF;
+    color: #5f490d;
     font-weight: bold;
     background: linear-gradient(to bottom, #fceabb 0%,#fccd4d 50%,#f8b500 51%,#fbdf93 100%);
 }
