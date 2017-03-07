@@ -6,15 +6,15 @@
     <link rel="stylesheet" href="kontakt.css">
 </head>
 <body>
-    <form>
+    <form action="registrera.php" method="post">
         <h1>Kontaktformulär</h1>
         <fieldset>
             <legend>Personuppgifter</legend>
             <label for="fnamn">Förnamn</label>
-            <input id="fnamn" type="text" placeholder="Anders" required><br>
+            <input id="fnamn" type="text" placeholder="Anders" required name="fnamn"><br>
 
             <label for="enamn">Efternamn</label>
-            <input id="enamn" type="text" placeholder="Karlsson" required><br>
+            <input id="enamn" type="text" placeholder="Karlsson" required name="enamn"><br>
 
             <label for="gadress">Gatuadress</label>
             <input id="gadress" type="text" placeholder="Vattugatan 8" required><br>
@@ -34,30 +34,30 @@
 
         <fieldset class="frivilliga">
             <legend>Kön</legend>
-            <input id="kon_man" type="radio" name="kon">
+            <input id="kon_man" type="radio" name="kon" value="man">
             <label for="kon_man">Man</label>
-            <input id="kon_kvinna" type="radio" name="kon">
+            <input id="kon_kvinna" type="radio" name="kon" value="kvinna">
             <label for="kon_kvinna">Kvinna</label>
-            <input id="kon_inte" type="radio" name="kon">
+            <input id="kon_inte" type="radio" name="kon" value="annat">
             <label for="kon_inte">Vill inte säga</label>
         </fieldset>
         <fieldset class="frivilliga">
             <legend>Allergi</legend>
-            <input id="allergi_gluten" type="checkbox" name="allergi">
+            <input id="allergi_gluten" type="checkbox" name="allergi" value="gluten">
             <label for="allergi_gluten">Gluten</label>
-            <input id="allergi_laktos" type="checkbox" name="allergi">
+            <input id="allergi_laktos" type="checkbox" name="allergi" value="laktos">
             <label for="allergi_laktos">Laktos</label>
-            <input id="allergi_notter" type="checkbox" name="allergi">
+            <input id="allergi_notter" type="checkbox" name="allergi" value="nötter">
             <label for="allergi_notter">Nötter</label>
         </fieldset>
         <fieldset>
             <legend>Åldersgrupp</legend>
-            <select>
-                <option selected disabled>Välj ..</option>
-                <option>0 - 10 år</option>
-                <option>11 - 20 år</option>
-                <option>21 - 30 år</option>
-                <option>30+ år</option>
+            <select name="alder">
+                <option selected disabled value="1">Välj ..</option>
+                <option value="2">0 - 10 år</option>
+                <option value="3">11 - 20 år</option>
+                <option value="4">21 - 30 år</option>
+                <option value="5">30+ år</option>
             </select>
         </fieldset>
 
