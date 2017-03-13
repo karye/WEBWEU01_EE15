@@ -1,0 +1,45 @@
+/* CSS-reset */
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body, h1, h2, h3, h4, h5, h6, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Layoutens utseende */
+body {
+    font-family: monospace;
+}
+.kontainer {
+    width: 800px;
+    background: url(bilder/section-grain.png);
+}
+
+/* Del - postnummer */
+h1 {
+
+}
+p {
+
+}
+label {
+
+}
+#pnummer {
+    width: 335px;
+}
+button {
+
+}
+
+/* Del - kontaktuppgifter */
+h2 {
+
+}
+#fnamn, #enamn, #epost, #telefon {
+    width: 220px;
+}
