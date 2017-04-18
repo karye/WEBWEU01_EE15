@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Oxygen|Righteous|Ubuntu');
+
 /* CSS-reset */
 html {
     box-sizing: border-box;
@@ -8,4 +10,71 @@ html {
 body, h1, h2, h3, h4, h5, h6, p, ul {
     margin: 0;
     padding: 0;
+}
+
+/* Layoutens utseende */
+body {
+
+}
+.kontainer {
+    font-family: 'Oxygen', sans-serif;
+}
+
+/* Sidhuvudets utseende */
+header {
+
+}
+h1 {
+    font-family: 'Righteous', cursive;
+}
+
+/* Menyn utseende */
+nav {
+
+}
+nav ul {
+
+}
+nav li {
+
+}
+nav li a {
+
+}
+nav li a:hover {
+
+}
+nav li a.current {
+
+}
+
+/* Innehållets utseende */
+main {
+
+}
+main article {
+
+}
+main h2 {
+    font-family: 'Ubuntu', sans-serif;
+}
+main article p {
+
+}
+main figure {
+
+}
+main figure img {
+
+}
+main figure figcaption p {
+
+}
+
+/* Sidfotens utseende */
+footer {
+
+}
+footer p {
+
 }
