@@ -3,38 +3,53 @@
 
 }
 .wanderer video {
-
+    position: fixed;
+    z-index: -100;
+    width: auto;
+    height: auto;
+    min-width: 100%;
+    min-height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+.wanderer .kontainer {
+    box-shadow: none;
+    color: #FFF;
+}
+.wanderer header {
+    background: none;
 }
 
 /* Special för sida2.html */
 .ceres {
 
 }
-.ceres kontainer {
-
+.ceres .kontainer {
+    background: rgba(68, 86, 144, 0.26);
 }
 
 /* Special för sida3.html */
 .enceladus {
 
 }
-.enceladus kontainer {
-
+.enceladus .kontainer {
+    background: rgba(92, 3, 25, 0.29);
 }
 
 /* Special för sida4.html */
 .titan {
 
 }
-.titan kontainer {
-
+.titan .kontainer {
+    background: rgba(233, 188, 2, 0.38);
 }
 
 /* Special för sida5.html */
 .venus {
 
 }
-.venus kontainer {
-
+.venus .kontainer {
+    background: rgba(249, 217, 196, 0.47);
 }
 

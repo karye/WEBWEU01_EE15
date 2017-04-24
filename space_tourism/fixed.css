@@ -1,0 +1,18 @@
+.kontainer {
+    margin-top: 150px;
+    box-shadow: none;
+}
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    box-shadow: 0 0 10px #000;
+    background: #FFF;
+}
+.ceres {
+    background: rgba(68, 86, 144, 0.26);
+}
+.ceres .kontainer {
+    background: none;
+}

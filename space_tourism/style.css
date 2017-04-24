@@ -18,14 +18,21 @@ body {
 }
 .kontainer {
     font-family: 'Oxygen', sans-serif;
+    width: 700px;
+    margin: 0 auto;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.51);
 }
 
 /* Sidhuvudets utseende */
 header {
-
+    background: #EEE;
+    color: darkorange;
+    text-align: center;
+    padding: 20px;
 }
 h1 {
     font-family: 'Righteous', cursive;
+    font-size: 70px;
 }
 
 /* Menyn utseende */
@@ -36,36 +43,49 @@ nav ul {
 
 }
 nav li {
-
+    display: inline-block;
 }
 nav li a {
-
+    font-size: 25px;
+    padding: 0 10px;
+    color: darkorange;
+    text-decoration: none;
 }
 nav li a:hover {
-
+    color: brown;
 }
 nav li a.current {
-
+    color: brown;
+    border-bottom: 4px solid;
 }
 
 /* Innehållets utseende */
 main {
-
+    padding: 40px;
 }
 main article {
 
 }
 main h2 {
     font-family: 'Ubuntu', sans-serif;
+    font-size: 40px;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    text-align: center;
+    color: #FFF;
+    text-shadow: 0 2px 2px #000;
 }
 main article p {
-
+    margin-bottom: 10px;
 }
 main figure {
-
+    width: 450px;
+    padding: 10px;
+    background: #FFF;
+    margin: 15px auto;
 }
 main figure img {
-
+    width: 100%;
 }
 main figure figcaption p {
 
